@@ -38,7 +38,7 @@ export function Footer() {
             <p className="text-sm text-[#555050] mt-3 mb-4">Put it on record.</p>
             <div className="flex items-center gap-2.5">
               <motion.a
-                href="https://x.com/call__out"
+                href="https://x.com/justbrunoc"
                 aria-label="X (Twitter)"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -49,7 +49,7 @@ export function Footer() {
                 <XLogo className="w-3.5 h-3.5" />
               </motion.a>
               <motion.a
-                href="https://github.com/justbruno1"
+                href="https://github.com/justbruno1/Call-out.git"
                 aria-label="GitHub"
                 target="_blank"
                 rel="noopener noreferrer"
