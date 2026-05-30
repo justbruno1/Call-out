@@ -39,7 +39,7 @@ Open `.env.local` and fill in your values:
 
 ```env
 # GenLayer faucet URL — users need test GEN to file and defend cases
-NEXT_PUBLIC_GENLAYER_FAUCET_URL=https://faucet.genlayer.io
+NEXT_PUBLIC_GENLAYER_FAUCET_URL=https://testnet-faucet.genlayer.foundation/
 
 # GenLayer network (testnet, devnet, etc.)
 NEXT_PUBLIC_GENLAYER_NETWORK=testnet
@@ -133,7 +133,7 @@ To deploy on GenLayer:
 3. Add the contract address to `NEXT_PUBLIC_CONTRACT_ADDRESS`
 4. Replace mock frontend calls with real GenLayer SDK calls
 
-Refer to [https://docs.genlayer.io](https://docs.genlayer.io) for current SDK docs.
+Refer to [https://docs.genlayer.com](https://docs.genlayer.com) for current SDK docs.
 
 ---
 
