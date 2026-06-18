@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { AlertCircle, Plus, Minus, ArrowRight, FileText, CheckCircle } from "lucide-react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { GENLAYER_NETWORK, requireCalloutContractAddress } from "@/lib/genlayerContract";
 
 const categories = ["Rug pull","Fake claims","Stolen funds","Undelivered work","Impersonation","Suspicious wallet activity","Governance abuse","Other misconduct"];
 const bondAmounts = { Low: 5, Medium: 10, High: 25 };
@@ -28,6 +29,11 @@ export default function FileCasePage() {
 
   const handleSubmit = async () => {
     setIsSubmitting(true);
+    const contractAddress = requireCalloutContractAddress();
+    console.info("Using Callout Reputation Court contract", {
+      address: contractAddress,
+      network: GENLAYER_NETWORK,
+    });
     await new Promise(r => setTimeout(r, 2000));
     setIsSubmitting(false);
     setSubmitted(true);
